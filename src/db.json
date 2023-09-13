@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "email": "user1@example.com",
+      "name": "User 1",
+      "uid": "user1uid",
+      "cart": {
+        "totalCount": 3,
+        "totalPrice": 50.5,
+        "cartProducts": [
+          {
+            "id": "product1",
+            "title": "Product 1",
+            "price": 10.5,
+            "category": "category1",
+            "image": "product1.jpg"
+          },
+          {
+            "id": "product2",
+            "title": "Product 2",
+            "price": 20.5,
+            "category": "category2",
+            "image": "product2.jpg"
+          },
+          {
+            "id": "product3",
+            "title": "Product 3",
+            "price": 19.5,
+            "category": "category1",
+            "image": "product3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "email": "user2@example.com",
+      "name": "User 2",
+      "uid": "user2uid",
+      "cart": {
+        "totalCount": 2,
+        "totalPrice": 35.0,
+        "cartProducts": [
+          {
+            "id": "product2",
+            "title": "Product 2",
+            "price": 20.5,
+            "category": "category2",
+            "image": "product2.jpg"
+          },
+          {
+            "id": "product4",
+            "title": "Product 4",
+            "price": 14.5,
+            "category": "category3",
+            "image": "product4.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "category1",
+      "name": "Category 1"
+    },
+    {
+      "id": "category2",
+      "name": "Category 2"
+    },
+    {
+      "id": "category3",
+      "name": "Category 3"
+    }
+  ],
+  "products": [
+    {
+      "id": "product1",
+      "title": "Product 1",
+      "price": 10.5,
+      "category": "category1",
+      "image": "product1.jpg"
+    },
+    {
+      "id": "product2",
+      "title": "Product 2",
+      "price": 20.5,
+      "category": "category2",
+      "image": "product2.jpg"
+    },
+    {
+      "id": "product3",
+      "title": "Product 3",
+      "price": 19.5,
+      "category": "category1",
+      "image": "product3.jpg"
+    },
+    {
+      "id": "product4",
+      "title": "Product 4",
+      "price": 14.5,
+      "category": "category3",
+      "image": "product4.jpg"
+    }
+  ]
+}

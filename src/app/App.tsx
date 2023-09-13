@@ -1,14 +1,32 @@
-import React from 'react';
-import './App.css';
-import {auth, db, storage} from "../common/api/common.api";
+import {Register} from "../common/register";
+import {Login} from "../common/login";
 
-function App() {
-  console.log(db, storage, auth)
+
+const App = () => {
+  // const [products, setProducts] = useState([]);
+  //
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const dataRef = await ref(db, 'products');
+  //     try {
+  //       const snapshot = await get(dataRef)
+  //       if (snapshot.exists()) {
+  //         setProducts(snapshot.val())
+  //         console.log(products)
+  //       }
+  //     } catch (e) {
+  //       console.log(e)
+  //     }
+  //   }
+  //
+  //   fetchData()
+  // }, [])
   return (
-    <div className="App">
-      {}
-    </div>
+     <div>
+       <Register/>
+       <Login/>
+     </div>
   );
-}
+};
 
 export default App;
