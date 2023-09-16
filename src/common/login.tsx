@@ -10,6 +10,10 @@ export const Login = () => {
         dispatch(authThunks.loginUser({email, password}))
     }
 
+    const handleLogout = () => {
+        dispatch(authThunks.logoutUser())
+    }
+
     return (
         <div style={{width: '400px'}}>
             <h1>Login</h1>
@@ -27,6 +31,7 @@ export const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 <button onClick={handleSignIn} type="submit">Login</button>
+                <button onClick={handleLogout} type="submit">Logout</button>
             </form>
         </div>
     );

@@ -1,4 +1,3 @@
-import { createUserWithEmailAndPassword, fetchSignInMethodsForEmail } from 'firebase/auth';
 import {useEffect, useState} from "react";
 import { auth, db } from "./api/common.api";
 import { ref, set, get } from "firebase/database";
@@ -9,6 +8,7 @@ export const Register = () => {
     const dispatch = useAppDispatch();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
     const [categories, setCategories] = useState();
 
     useEffect(() => {
@@ -40,7 +40,7 @@ export const Register = () => {
 
 
     const handleRegister = () => {
-                dispatch(authThunks.registerUser({email, password}))
+                dispatch(authThunks.registerUser({email, password, name}))
     }
 
     return (
@@ -59,6 +59,12 @@ export const Register = () => {
                         placeholder="Пароль"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Имя"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                     />
                     <button onClick={handleRegister} type="submit">Register</button>
                 </form>
